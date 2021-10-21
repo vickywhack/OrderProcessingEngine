@@ -7,10 +7,10 @@ namespace OrderProcessingEngine.Models
         public int ProductId { get; set; }
         public ProductType ProductType { get; set; }
         public string ProductName { get; set; }
-        public Status Status { get; set; }
+        public ProductStatus Status { get; set; }
     }
 
-    public enum Status
+    public enum ProductStatus
     {
         UnProcessed,
         Processed

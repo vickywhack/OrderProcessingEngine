@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "OrderProcessingEngine", "Or
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderProcessingEngine.Models", "OrderProcessingEngine.Models\OrderProcessingEngine.Models.csproj", "{46D3B9C6-23FC-4F57-A9F0-C75D6A62635F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OrderProcessingEngine.Data", "OrderProcessingEngine.Data\OrderProcessingEngine.Data.csproj", "{2594992C-2023-4D79-A65E-3D0E929EACCE}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{46D3B9C6-23FC-4F57-A9F0-C75D6A62635F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46D3B9C6-23FC-4F57-A9F0-C75D6A62635F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46D3B9C6-23FC-4F57-A9F0-C75D6A62635F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2594992C-2023-4D79-A65E-3D0E929EACCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2594992C-2023-4D79-A65E-3D0E929EACCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2594992C-2023-4D79-A65E-3D0E929EACCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2594992C-2023-4D79-A65E-3D0E929EACCE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

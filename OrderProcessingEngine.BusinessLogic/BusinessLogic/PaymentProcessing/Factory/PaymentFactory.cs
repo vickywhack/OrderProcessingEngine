@@ -18,7 +18,7 @@ namespace OrderProcessingEngine.BusinessLogic.PaymentProcessing.Factory
         public IPaymentProcessing  GetPaymentProcessingInstance(ProductType productType)
         {
             var enumName = Enum.GetName(typeof(ProductType), productType);
-            return (IPaymentProcessing)Activator.CreateInstance(Type.GetType($"OrderProcessing.Business.BusinessLogic.PaymentProcessing.Concrete.{enumName}PaymentProcessing"), productRepository);
+            return (IPaymentProcessing)Activator.CreateInstance(Type.GetType($"OrderProcessingEngine.BusinessLogic.PaymentProcessing.Concrete.{enumName}PaymentProcessing"), productRepository);
         }
     }
 }

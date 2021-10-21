@@ -9,6 +9,10 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using OrderProcessingEngine.BusinessLogic;
+using OrderProcessingEngine.BusinessLogic.PaymentProcessing.Factory;
+using OrderProcessingEngine.Data.IRepository;
+using OrderProcessingEngine.Data.Repository;
 
 namespace OrderProcessingEngine
 {
@@ -33,6 +37,10 @@ namespace OrderProcessingEngine
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
+            services.AddSingleton<IProductRepository, ProductRepository>();
+            services.AddSingleton<IProductBusiness, ProductBusiness>();
+            services.AddSingleton<IPaymentFactory, BusinessPaymentProcessing>();
+            services.AddSingleton<IMemberShipRepository, MembershipRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

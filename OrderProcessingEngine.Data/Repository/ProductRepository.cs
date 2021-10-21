@@ -15,11 +15,11 @@ namespace OrderProcessingEngine.Data.Repository
 
         public static List<ProductDetail> productDetailsList = new List<ProductDetail>
             {
-            new ProductDetail {ProductId =1, ProductType =  ProductType.Book, ProductName = "JungleBook", Status = ProductStatus.UnProcessed},
-            new ProductDetail {ProductId =2, ProductType =  ProductType.NewMemberShip, ProductName = "newMemberShip", Status = ProductStatus.UnProcessed },
-            new ProductDetail {ProductId =3, ProductType =  ProductType.PhysicalProduct, ProductName = "PhisycalProduct", Status = ProductStatus.UnProcessed },
-            new ProductDetail {ProductId =4, ProductType =  ProductType.UpgradeMembership, ProductName = "UpgradeMembers", Status = ProductStatus.UnProcessed },
-            new ProductDetail {ProductId =5, ProductType =  ProductType.Video, ProductName = "Learning to Ski", Status = ProductStatus.UnProcessed }
+            new ProductDetail {ProductId =1, ProductType =  ProductType.Book, ProductName = "JungleBook", Status = Status.UnProcessed},
+            new ProductDetail {ProductId =2, ProductType =  ProductType.NewMemberShip, ProductName = "newMemberShip", Status = Status.UnProcessed },
+            new ProductDetail {ProductId =3, ProductType =  ProductType.PhysicalProduct, ProductName = "PhisycalProduct", Status = Status.UnProcessed },
+            new ProductDetail {ProductId =4, ProductType =  ProductType.UpgradeMembership, ProductName = "UpgradeMembers", Status = Status.UnProcessed },
+            new ProductDetail {ProductId =5, ProductType =  ProductType.Video, ProductName = "Learning to Ski", Status = Status.UnProcessed }
             };
         public List<ProductDetail> GetProductList()
         {
@@ -60,7 +60,7 @@ namespace OrderProcessingEngine.Data.Repository
         private void ChangeStatusToProcessed(int productId)
         {
             var product = productDetailsList.FirstOrDefault(x => x.ProductId == productId);
-            product.Status = ProductStatus.Processed;
+            product.Status = Status.Processed;
         }
     }
 }

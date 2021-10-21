@@ -4,7 +4,7 @@ using OrderProcessingEngine.Data.IRepository;
 using OrderProcessingEngine.Models;
 using System;
 
-namespace OrderProcessing.Business.BusinessLogic.PaymentProcessing.Factory
+namespace OrderProcessingEngine.BusinessLogic.PaymentProcessing.Factory
 {
     public class BusinessPaymentProcessing : IPaymentFactory
     {
